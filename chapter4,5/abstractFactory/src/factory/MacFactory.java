@@ -1,5 +1,10 @@
 package factory;
 
+import button.Button;
+import button.MacButton;
+import checkBox.CheckBox;
+import checkBox.MacCheckBox;
+
 public class MacFactory implements GUIFactory {
 
     private MacFactory() {
@@ -15,11 +20,11 @@ public class MacFactory implements GUIFactory {
 
     @Override
     public Button createButton() {
-        return null;
+        return new MacButton();
     }
 
     @Override
     public CheckBox createCheckBox() {
-        return null;
+        return new MacCheckBox();
     }
 }
