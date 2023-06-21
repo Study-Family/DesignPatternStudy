@@ -10,11 +10,11 @@ public class MacFactory implements GUIFactory {
     private MacFactory() {
     }
 
-    static class MacFactoryLazyHolder {
+    private static class MacFactoryLazyHolder {
         public static final MacFactory INSTANCE = new MacFactory();
     }
 
-    public MacFactory getInstance() {
+    public static MacFactory getInstance() {
         return MacFactoryLazyHolder.INSTANCE;
     }
 

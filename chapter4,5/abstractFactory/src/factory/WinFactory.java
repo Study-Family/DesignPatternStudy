@@ -9,7 +9,7 @@ public class WinFactory implements GUIFactory {
     private WinFactory() {
     }
 
-    static class WinFactoryLazyHolder {
+    private static class WinFactoryLazyHolder {
         private static final WinFactory INSTANCE = new WinFactory();
     }
 
