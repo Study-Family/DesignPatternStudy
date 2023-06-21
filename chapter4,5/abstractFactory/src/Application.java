@@ -1,22 +1,19 @@
 import button.Button;
 import checkBox.CheckBox;
 import factory.GUIFactory;
-import factory.MacFactory;
-import factory.WinFactory;
 
 public class Application {
-    public static void main(String[] args) {
-        GUIFactory factory = MacFactory.getInstance();
-        Button button = factory.createButton();
-        CheckBox checkBox = factory.createCheckBox();
+    private GUIFactory factory;
+    private Button button;
+    private CheckBox checkBox;
 
-        button.paint();
-        checkBox.paint();
+    public Application(GUIFactory factory) {
+        this.factory = factory;
+        this.button = factory.createButton();
+        this.checkBox = factory.createCheckBox();
+    }
 
-        factory = WinFactory.getInstance();
-        button = factory.createButton();
-        checkBox = factory.createCheckBox();
-
+    public void createUI() {
         button.paint();
         checkBox.paint();
     }
