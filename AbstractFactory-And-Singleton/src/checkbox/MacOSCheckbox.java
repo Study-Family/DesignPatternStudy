@@ -1,6 +1,6 @@
 package checkbox;
 
-public class MaxOSCheckbox implements Checkbox {
+public class MacOSCheckbox implements Checkbox {
 
     @Override
     public void paint() {
