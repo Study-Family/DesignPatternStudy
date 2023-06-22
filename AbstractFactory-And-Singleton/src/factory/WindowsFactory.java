@@ -1,6 +1,6 @@
 package factory;
 
-import Checkbox.Checkbox;
+import checkbox.Checkbox;
 import button.Button;
 
 public class WindowsFactory implements GUIFactory {
