@@ -1,4 +1,4 @@
-package Checkbox;
+package checkbox;
 
 public interface Checkbox {
 
