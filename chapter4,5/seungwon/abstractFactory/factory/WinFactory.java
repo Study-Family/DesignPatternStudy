@@ -1,4 +1,3 @@
-package tmp.abstractFactory.factory;
 
 import tmp.abstractFactory.checkBox.Checkbox;
 import tmp.abstractFactory.button.Button;
